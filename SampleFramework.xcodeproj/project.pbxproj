@@ -10,6 +10,7 @@
 		ECE5F9A8200F866E007E5D6F /* SampleFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECE5F99E200F866E007E5D6F /* SampleFramework.framework */; };
 		ECE5F9AD200F866E007E5D6F /* SampleFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE5F9AC200F866E007E5D6F /* SampleFrameworkTests.swift */; };
 		ECE5F9AF200F866E007E5D6F /* SampleFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = ECE5F9A1200F866E007E5D6F /* SampleFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECE5F9B9200F86E0007E5D6F /* Pair.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE5F9B8200F86E0007E5D6F /* Pair.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		ECE5F9A7200F866E007E5D6F /* SampleFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECE5F9AC200F866E007E5D6F /* SampleFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleFrameworkTests.swift; sourceTree = "<group>"; };
 		ECE5F9AE200F866E007E5D6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECE5F9B8200F86E0007E5D6F /* Pair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pair.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				ECE5F9A1200F866E007E5D6F /* SampleFramework.h */,
 				ECE5F9A2200F866E007E5D6F /* Info.plist */,
+				ECE5F9B8200F86E0007E5D6F /* Pair.swift */,
 			);
 			path = SampleFramework;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					ECE5F99D200F866E007E5D6F = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					ECE5F9A6200F866E007E5D6F = {
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECE5F9B9200F86E0007E5D6F /* Pair.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +339,7 @@
 		ECE5F9B3200F866E007E5D6F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -346,6 +352,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.esgi.SampleFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -354,6 +361,7 @@
 		ECE5F9B4200F866E007E5D6F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -374,6 +382,7 @@
 		ECE5F9B6200F866E007E5D6F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SampleFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -387,6 +396,7 @@
 		ECE5F9B7200F866E007E5D6F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SampleFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
